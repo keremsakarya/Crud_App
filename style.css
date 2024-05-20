@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: #49a6e9;
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--clr-grey-1);
+}
+
+.section-center {
+    width: 90vw;
+    margin: 128px auto;
+    padding: 32px;
+    background: var(--clr-white);
+    transition: all .3s;
+    border-radius: var(--radius);
+}
+
+.section-center:hover {
+    box-shadow: var(--dark-shadow);
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 7px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.grocery-form h3 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#grocery {
+    padding: 4px;
+    font-size: 16px;
+    background: var(--clr-grey-10);
+    border-color: transparent;
+    width: 100%;
+    color: var(--clr-grey-5);
+    text-indent: 16px;
+    border-radius: 10px 0 0 10px;
+}
+
+.submit-btn {
+    background: var(--clr-primary-8);
+    border-color: transparent;
+    flex: 0 0 80px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background: var(--clr-primary-5);
+    color: #fff;
+    transition: all.3s;
+}
+
+.grocery-container {
+    margin-top: 32px;
+}
+
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.grocery-item:hover {
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-5);
+}
+
+.title {
+    letter-spacing: 2px;
+}
+
+.edit-btn,
+.delate-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 2.5px;
+    transition: all .3s;
+}
+
+.edit-btn {
+    color: var(--clr-green-light);
+}
+
+.delate-btn {
+    color: var(--clr-red-light);
+}
+
+.edit-btn:hover {
+    color: var(--clr-green-dark);
+}
+
+.delate-btn:hover {
+    color: var(--clr-red-dark);
+}
+
+.clear-btn {
+    background: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+    width: 160px;
+    margin: 20px auto;
+    font-size: 14px;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    color: var(--clr-red-light);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.clear-btn:hover {
+    color: var(--clr-red-dark);
+}
+
+@media (min-width:990px) {
+    .section-center {
+        width: 35vw;
+    }
+}

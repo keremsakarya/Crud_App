@@ -4,7 +4,7 @@ This repo is created for users to write their shopping lists and add to basket. 
 
 # Features
 
-The site has a simple design which allows to fresh appearance and basic usage to users. With JS's help, our buttons works smoothly.
+The site has a simple design which allows to fresh appearance and basic usage to users. With JS's help, our buttons works smoothly. Also, even if you refresh the page your datas will be saved due to your datas transferres to local storage.
 
 # GIF
 
